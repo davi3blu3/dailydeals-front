@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
 import { Deal } from '../deal';
 // We haven't defined these services yet
-import { AuthService } from '../auth.service';
+// import { AuthService } from '../auth.service';
 import { DealService } from '../deal.service';
 
 @Component({
@@ -17,7 +17,7 @@ export class PublicDealsComponent implements OnInit, OnDestroy {
 
   constructor(
     public dealService: DealService,
-    public authService: AuthService
+    // public authService: AuthService
   ) { }
 
   ngOnInit() {
